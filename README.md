@@ -2,39 +2,6 @@
 # Telecom Churn Prediction and Analysis
 
 A Python script for predicting and analyzing telecom customer churn. The script covers data preprocessing, exploratory data analysis (EDA), feature engineering, and the implementation of a logistic regression model with Principal Component Analysis (PCA) for dimensionality reduction. The dataset includes information on customer behavior, recharge patterns, and usage metrics. The readme provides an overview of the script, details on each processing step, and insights into model performance metrics. Researchers, data scientists, and telecom industry professionals can utilize this repository for understanding and predicting customer churn patterns.
-## Features Engineering
-
-The script performs feature engineering to derive meaningful features for predicting telecom customer churn. Here are the key features generated:
-
-### Usage Metrics:
-
-- **total_mou_good:** Total Minutes of Usage (MOU) during the good phase (incoming and outgoing).
-- **avg_mou_action:** Average MOU during the action phase (months 7 and 8).
-- **diff_mou:** Difference between avg_mou_action and total_mou_good.
-- **decrease_mou_action:** Binary indicator (1 or 0) for whether MOU decreased in the action phase.
-
-### Recharge Metrics:
-
-- **avg_rech_num_action:** Average recharge numbers during the action phase.
-- **diff_rech_num:** Difference between avg_rech_num_action and total_rech_num_6.
-- **decrease_rech_num_action:** Binary indicator for whether recharge numbers decreased in the action phase.
-- **avg_rech_amt_action:** Average recharge amount during the action phase.
-- **diff_rech_amt:** Difference between avg_rech_amt_action and total_rech_amt_6.
-- **decrease_rech_amt_action:** Binary indicator for whether recharge amount decreased in the action phase.
-
-### ARPU (Average Revenue Per User) Metrics:
-
-- **avg_arpu_action:** Average ARPU during the action phase.
-- **diff_arpu:** Difference between avg_arpu_action and arpu_6.
-- **decrease_arpu_action:** Binary indicator for whether ARPU decreased in the action phase.
-
-### VBC (Volume-Based Cost) Metrics:
-
-- **avg_vbc_3g_action:** Average 3G VBC during the action phase.
-- **diff_vbc:** Difference between avg_vbc_3g_action and jun_vbc_3g.
-- **decrease_vbc_action:** Binary indicator for whether 3G VBC decreased in the action phase.
-
-These features provide insights into customer behavior and usage patterns, helping to identify potential indicators of churn.
 
 ## Features
 
@@ -77,6 +44,39 @@ The telecom churn prediction and analysis script offer several functionalities, 
 - Performs logistic regression model training using cross-validation with sensitivity as the primary evaluation metric.
 - Evaluates model performance on both the training and testing sets.
 
+## Features Engineering
+
+The script performs feature engineering to derive meaningful features for predicting telecom customer churn. Here are the key features generated:
+
+### Usage Metrics:
+
+- **total_mou_good:** Total Minutes of Usage (MOU) during the good phase (incoming and outgoing).
+- **avg_mou_action:** Average MOU during the action phase (months 7 and 8).
+- **diff_mou:** Difference between avg_mou_action and total_mou_good.
+- **decrease_mou_action:** Binary indicator (1 or 0) for whether MOU decreased in the action phase.
+
+### Recharge Metrics:
+
+- **avg_rech_num_action:** Average recharge numbers during the action phase.
+- **diff_rech_num:** Difference between avg_rech_num_action and total_rech_num_6.
+- **decrease_rech_num_action:** Binary indicator for whether recharge numbers decreased in the action phase.
+- **avg_rech_amt_action:** Average recharge amount during the action phase.
+- **diff_rech_amt:** Difference between avg_rech_amt_action and total_rech_amt_6.
+- **decrease_rech_amt_action:** Binary indicator for whether recharge amount decreased in the action phase.
+
+### ARPU (Average Revenue Per User) Metrics:
+
+- **avg_arpu_action:** Average ARPU during the action phase.
+- **diff_arpu:** Difference between avg_arpu_action and arpu_6.
+- **decrease_arpu_action:** Binary indicator for whether ARPU decreased in the action phase.
+
+### VBC (Volume-Based Cost) Metrics:
+
+- **avg_vbc_3g_action:** Average 3G VBC during the action phase.
+- **diff_vbc:** Difference between avg_vbc_3g_action and jun_vbc_3g.
+- **decrease_vbc_action:** Binary indicator for whether 3G VBC decreased in the action phase.
+
+These features provide insights into customer behavior and usage patterns, helping to identify potential indicators of churn.
 
 ## Authors
 
