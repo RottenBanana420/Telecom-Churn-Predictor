@@ -44,7 +44,7 @@ The telecom churn prediction and analysis script offer several functionalities, 
 - Performs logistic regression model training using cross-validation with sensitivity as the primary evaluation metric.
 - Evaluates model performance on both the training and testing sets.
 
-## Features Engineering
+## Feature Engineering
 
 The script performs feature engineering to derive meaningful features for predicting telecom customer churn. Here are the key features generated:
 
